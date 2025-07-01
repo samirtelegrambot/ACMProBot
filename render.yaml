@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: advanced-channel-manager-pro
+    env: python
+    plan: free
+    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
+    disk:
+      name: data
+      mountPath: /opt/render/project/src
+      sizeGB: 1
