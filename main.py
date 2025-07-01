@@ -87,10 +87,16 @@ EMOJI: Dict[str, str] = {
     "down": "🔽"
 }
 
-# Fixed channels (examples)
+# Fixed channels
 FIXED_CHANNELS: Dict[str, Dict[str, Any]] = {
-    "@channel1": {"name": "Main Channel", "type": "public", "subscribers": 1000},
-    "@channel2": {"name": "News Channel", "type": "public", "subscribers": 500},
+    "-1002489624380": {
+        "name": "Channel One",
+        "type": "private"
+    },
+    "-1002504723776": {
+        "name": "Channel Two",
+        "type": "private"
+    }
 }
 
 # Conversation states
