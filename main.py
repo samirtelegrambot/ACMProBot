@@ -58,8 +58,7 @@ def main():
 
     # Post Management Handlers
     application.add_handler(CommandHandler("preview_post", preview_post))
-    application.add_handler(CallbackQueryHandler(execute_post, pattern="^(confirm_post|cancel_post)$
-
+    application.add_handler(CallbackQueryHandler(execute_post, pattern="^(confirm_post|cancel_post)$"))
 
 
     # Settings Handlers
